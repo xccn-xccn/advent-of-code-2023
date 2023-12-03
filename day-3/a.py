@@ -17,7 +17,7 @@ def get_input_file():
 
 def main():
     text = read_file(get_input_file())
-    specials = set() #char / number, (coords)
+    specials = set() 
     numbers = []
     score = 0
 
