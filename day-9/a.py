@@ -22,7 +22,7 @@ def difference(*sequence):
 
     # print(diff, "diff")
     if all(x == 0 for x in diff):
-        return sequence[-1] + diff[-1]
+        return sequence[-1] 
     
     x = difference(*diff)
 
