@@ -15,8 +15,21 @@ def get_input_file():
         return argv[1] if argv[1] != "i" else "input.txt"
 
 
+def double_blanks(text):
+    grid = []
+    for line in text:
+        grid.append(line)
+
+        if all(x == "." for x in line):
+            grid.append(line)
+
+    return grid
 def main():
     text = read_file(get_input_file()).splitlines()
+
+    grid = double_blanks(text)
+    grid = double_blanks(zip(*grid))
+    
     
 
 
